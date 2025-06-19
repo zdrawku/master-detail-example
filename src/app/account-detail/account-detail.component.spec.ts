@@ -4,7 +4,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IgxAvatarComponent, IGX_TABS_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_ACCORDION_DIRECTIVES, IGX_EXPANSION_PANEL_DIRECTIVES, IgxCheckboxComponent, IGX_LIST_DIRECTIVES, IGX_CHIPS_DIRECTIVES } from 'igniteui-angular';
+import { IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IgxAvatarComponent, IGX_TABS_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_SIMPLE_COMBO_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_ACCORDION_DIRECTIVES, IGX_EXPANSION_PANEL_DIRECTIVES, IgxCheckboxComponent, IGX_LIST_DIRECTIVES, IGX_CHIPS_DIRECTIVES } from 'igniteui-angular';
 import { AccountDetailComponent } from './account-detail.component';
 
 describe('AccountDetailComponent', () => {
@@ -13,7 +13,7 @@ describe('AccountDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AccountDetailComponent, NoopAnimationsModule, FormsModule, RouterTestingModule, HttpClientTestingModule, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IgxAvatarComponent, IGX_TABS_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_ACCORDION_DIRECTIVES, IGX_EXPANSION_PANEL_DIRECTIVES, IgxCheckboxComponent, IGX_LIST_DIRECTIVES, IGX_CHIPS_DIRECTIVES]
+      imports: [AccountDetailComponent, NoopAnimationsModule, FormsModule, RouterTestingModule, HttpClientTestingModule, IgxButtonDirective, IgxRippleDirective, IgxIconComponent, IgxAvatarComponent, IGX_TABS_DIRECTIVES, IGX_GRID_DIRECTIVES, IGX_SIMPLE_COMBO_DIRECTIVES, IGX_INPUT_GROUP_DIRECTIVES, IGX_ACCORDION_DIRECTIVES, IGX_EXPANSION_PANEL_DIRECTIVES, IgxCheckboxComponent, IGX_LIST_DIRECTIVES, IGX_CHIPS_DIRECTIVES]
     })
     .compileComponents();
 

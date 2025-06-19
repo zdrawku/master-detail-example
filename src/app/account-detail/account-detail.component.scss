@@ -127,7 +127,7 @@
   min-width: 100%;
 }
 .group_8 {
-  background-color: var(--ig-primary-100);
+  background-color: var(--ig-gray-200);
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -287,6 +287,10 @@
   height: max-content;
   align-self: start;
 }
+.single-select-combo {
+  height: max-content;
+  min-width: min-content;
+}
 .button_1 {
   --ig-size: var(--ig-size-medium);
   height: max-content;
@@ -425,13 +429,6 @@
   --ig-size: var(--ig-size-medium);
   min-width: 600px;
   min-height: 300px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.grid_1 {
-  --ig-size: var(--ig-size-medium);
-  margin: 10px;
-  min-width: 600px;
   flex-grow: 1;
   flex-basis: 0;
 }
