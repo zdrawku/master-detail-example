@@ -97,16 +97,16 @@ export class AccountsComponent implements OnInit, OnDestroy {
   private createCustomerDtoFormGroup() {
     return new FormGroup({
       customerId: new FormControl<string | null>(null),
-      companyName: new FormControl<string | null>(null, Validators.required),
-      contactName: new FormControl<string | null>(null),
-      contactTitle: new FormControl<string | null>(null),
+      companyName: new FormControl<string | null>(null, [Validators.required, Validators.minLength(0), Validators.maxLength(100)]),
+      contactName: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(50)]),
+      contactTitle: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(50)]),
       address: new FormGroup({
-        street: new FormControl<string | null>(null),
-        city: new FormControl<string | null>(null),
-        region: new FormControl<string | null>(null),
-        postalCode: new FormControl<string | null>(null),
-        country: new FormControl<string | null>(null, Validators.required),
-        phone: new FormControl<string | null>(null),
+        street: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(100)]),
+        city: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(50)]),
+        region: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(50)]),
+        postalCode: new FormControl<string | null>(null, [Validators.minLength(0), Validators.maxLength(20)]),
+        country: new FormControl<string | null>(null, [Validators.required, Validators.minLength(0), Validators.maxLength(50)]),
+        phone: new FormControl<string | null>(null, Validators.pattern('^\+?[1-9]\d{1,14}$')),
       }),
     });
   }

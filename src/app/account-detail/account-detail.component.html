@@ -89,13 +89,9 @@
                 <p class="content">
                   Order Details
                 </p>
-                <igx-grid primaryKey="orderId" [allowFiltering]="true" filterMode="excelStyleFilter" [data]="rowData.orderDetails" class="grid_1">
-                  <igx-column field="orderId" dataType="number" header="orderId" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-                  <igx-column field="productId" dataType="number" header="productId" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-                  <igx-column field="unitPrice" dataType="number" header="unitPrice" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-                  <igx-column field="quantity" dataType="number" header="quantity" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-                  <igx-column field="discount" dataType="number" header="discount" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
-                </igx-grid>
+                <igx-simple-combo type="border" displayKey="orderId" [data]="rowData.orderDetails" class="single-select-combo">
+                  <label igxLabel>Label/Placeholder</label>
+                </igx-simple-combo>
               </div>
             </ng-template>
           </igx-grid>
